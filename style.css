@@ -153,3 +153,9 @@ section.log {
 	flex-grow: 1;
 	min-width: 50%;
 }
+
+audio {
+	margin: 0 auto;
+	display: block;
+	border-radius: 8px;
+}

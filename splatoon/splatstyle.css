@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "alternalog";
+    src: url("../assets/fonts/splatoon/nintendoP_DotGothic12-M.otf");
+}
+
+@font-face {
+    font-family: "code-bold";
+    src: url("../assets/fonts/code/SourceCodePro-Bold.ttf");
+}
+
+@font-face {
+    font-family: "alterna";
+    src: url("../assets/fonts/splatoon/SpAlterna-Regular.otf");
+}
+
+box {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: var(--main);
+}
+
+h1 {
+    font-family: "alterna";
+    text-align: center;
+}
+
+h2,
+h3 {
+    text-align: center;
+    font-family: "alternalog";
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+a:hover {
+    color: var(--accent-alt);
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    image-rendering: pixelated;
+    display: flex;
+    justify-content: center;
+    font-family: "alternalog";
+}
+
+flex {
+    display: flex;
+}
+
+header {
+    background-color: var(--second);
+    border-bottom: 2px solid var(--main);
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+aside {
+    background-color: var(--section);
+    width: 200px;
+    text-align: center;
+    border-right: 2px solid var(--main);
+    flex-shrink: 0;
+}
+
+main {
+    background-color: var(--second);
+    flex-grow: 3;
+    padding: 0 20px;
+}
+
+container {
+    max-width: 900px;
+    flex-grow: 1;
+    border: 2px solid var(--main);
+    backdrop-filter: blur(3px);
+}
+
+.closebutton {
+    width: 32px;
+    height: 32px;
+    background-image: url(../assets/images/close.png);
+    background-size: contain;
+    z-index: 9;
+}
+
+.closebutton:hover {
+    background-image: url(../assets/images/closehover.png);
+}

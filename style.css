@@ -1,0 +1,155 @@
+:root {
+	--main: #332d25cb;
+	--second: #ffebcd;
+	--accent: #da5d55;
+	--accent-alt: #a33a33;
+	--section: #453d33cb;
+}
+
+@font-face {
+    font-family: "lora";
+    src: url("assets/fonts/lora/Lora-Regular.ttf");
+}
+
+@font-face {
+    font-family: "alterna";
+    src: url("assets/fonts/splatoon/SpAlterna-Regular.otf");
+}
+
+@font-face {
+    font-family: "lora-bold";
+    src: url("assets/fonts/lora/Lora-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "whitney";
+    src: url("assets/fonts/whitney/whitneymedium.otf");
+}
+
+@font-face {
+    font-family: "whitney-bold";
+    src: url("assets/fonts/whitney/whitneybold.otf");
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	background-image: url("assets/images/battleback_dw_abbi.png");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: "lora";
+	color: var(--second);
+	image-rendering: pixelated;
+	font-size: 18px;
+}
+
+.container {
+	max-width: 900px;
+	flex-grow: 1;
+}
+
+img {
+	width: 100%;
+	border-radius: 8px;
+	image-rendering: auto;
+	margin: 5px;
+}
+
+h1, h2, h3 {
+	text-align: center;
+	font-family: "lora-bold";
+}
+
+a {
+	text-decoration: none;
+	color: var(--accent);
+}
+
+a:hover {
+	color: var(--accent-alt);
+}
+
+blog {
+	display: block;
+	border: 3px solid var(--second);
+	border-radius: 8px;
+	padding: 10px;
+	margin: 10px 5px;
+	background-color: var(--second);
+	color: var(--main);
+}
+
+blog:hover {
+	background-color: #ffffff00;
+	color: var(--second);
+}
+
+.flex {
+	display: flex;
+}
+
+.navbutton {
+	display: flex;
+	flex-grow: 1;
+	width: 110px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin: 0px;
+	background-color: var(--second);
+	color: var(--main);
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.navbutton:hover {
+	background-color: #ffffff00;
+	color: var(--second);
+}
+
+header {
+	border-radius: 8px;
+	background-color: var(--main);
+	overflow: hidden;
+	margin-bottom: 30px;
+	backdrop-filter: blur(2px);
+}
+
+main {
+	border-radius: 8px;
+	background: var(--main);
+	padding: 20px;
+	backdrop-filter: blur(2px);
+}
+
+section {
+	background-color: var(--section);
+    border-radius: 8px;
+    padding: 5px 20px;
+}
+
+section.log {
+	margin-top: 20px;
+}
+
+.log p {
+	white-space: pre-line;
+	font-family: whitney;
+}
+
+.log p::first-line {
+	color: var(--accent);
+	font-family: whitney-bold;
+}
+
+.logbutton {
+	flex-grow: 1;
+	min-width: 50%;
+}
